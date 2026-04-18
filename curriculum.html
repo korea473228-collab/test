@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>커리큘럼 | T-REX ACADEMY</title>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="sub-page"></body>
+    <nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">T-REX<span>ACADEMY</span></a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html">아카데미 소개</a></li>
+                <li><a href="curriculum.html">커리큘럼</a></li>
+                <li><a href="coaches.html">코치진</a></li>
+                <li class="mo-only"><a href="contact.html" class="btn-mo-nav">1:1 상담 신청</a></li>
+            </ul>
+            <a href="contact.html" class="btn-nav pc-only">1:1 상담 신청</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <header class="sub-hero">
+        <div class="container">
+            <span class="badge">TRAINING PROCESS</span>
+            <h1>티어 상승을 위한 <br><span>완벽한 로드맵</span></h1>
+        </div>
+    </header>
+
+    <main class="intro-section">
+        <div class="container">
+            <div class="section-title reveal">
+                <h2>Choose Your <span>Class</span></h2>
+                <p>당신의 목표에 최적화된 맞춤형 트레이닝 세션 (카드를 클릭해 보세요)</p>
+            </div>
+
+            <div class="class-grid">
+                <div id="card-hobby" class="class-card reveal hobby" onclick="openModal('hobby')">
+                    <div class="class-header">
+                        <span class="class-badge">BASIC</span>
+                        <h3>취미반</h3>
+                    </div>
+                    <div class="class-body">
+                        <p class="class-desc">게임을 더 즐겁게, 스트레스 없이 실력을 쌓고 싶은 분들을 위한 클래스입니다.</p>
+                        <div class="class-target">대상: 브론즈 ~ 골드</div>
+                    </div>
+                </div>
+
+                <div id="card-rank" class="class-card reveal rank" onclick="openModal('rank')">
+                    <div class="class-header">
+                        <span class="class-badge">RANK UP</span>
+                        <h3>랭크반</h3>
+                    </div>
+                    <div class="class-body">
+                        <p class="class-desc">한계에 부딪힌 티어를 파괴하고, 상위 1% 실전 기술을 배우는 집중 클래스입니다.</p>
+                        <div class="class-target">대상: 플래티넘 ~ 초월자</div>
+                    </div>
+                </div>
+
+                <div id="card-pro" class="class-card reveal pro" onclick="openModal('pro')">
+                    <div class="class-header">
+                        <span class="class-badge">PRO-ASPIRING</span>
+                        <h3>프로반</h3>
+                    </div>
+                    <div class="class-body">
+                        <p class="class-desc">프로게이머 데뷔 및 테스트 합격을 목표로 하는 엘리트 코칭 과정입니다.</p>
+                        <div class="class-target">대상: 불멸 ~ 레디언트</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 80px;" class="reveal">
+                <button class="btn-main" onclick="location.href='contact.html'">내 맞춤형 커리큘럼 상담받기</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

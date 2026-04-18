@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>상담 신청 | T-REX ACADEMY</title>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">T-REX<span>ACADEMY</span></a>
+            <div class="nav-right">
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="about.html">아카데미 소개</a></li>
+                    <li><a href="curriculum.html">커리큘럼</a></li>
+                    <li><a href="coaches.html">코치진</a></li>
+                    <li class="mo-only"><a href="contact.html" class="btn-mo-nav">1:1 상담 신청</a></li>
+                </ul>
+                <a href="contact.html" class="btn-nav pc-only">1:1 상담 신청</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="contact-main">
+        <div class="contact-wrapper">
+            <div class="contact-header reveal">
+                <span class="badge">CONSULTING</span>
+                <h1>상담 신청</h1>
+                <p>전문 코치진이 직접 진단해 드립니다.</p>
+            </div>
+
+            <div class="form-container reveal">
+                <form id="contactForm">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>이름</label>
+                            <input type="text" id="userName" placeholder="성함" required>
+                        </div>
+                        <div class="input-group">
+                            <label>연락처</label>
+                            <input type="tel" id="userPhone" placeholder="010-0000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>생년월일 (8자리 입력)</label>
+                        <input type="text" id="userBirth" placeholder="예: 20050101" maxlength="8" required>
+                    </div>
+
+                    <div id="parentSection" class="hidden-section">
+                        <div class="section-notice">⚠️ 만 19세 미만 필수 정보</div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>보호자 연락처</label>
+                                <input type="tel" id="parentPhone">
+                            </div>
+                            <div class="input-group">
+                                <label>보호자와의 관계</label>
+                                <input type="text" id="parentRelation" placeholder="예: 부, 모">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>상담 방식</label>
+                            <div class="custom-select" id="selectType">
+                                <div class="select-trigger">
+                                    <span>전화 상담</span>
+                                    <i class="arrow"></i>
+                                </div>
+                                <div class="custom-options">
+                                    <div class="option selected" data-value="전화">전화 상담</div>
+                                    <div class="option" data-value="문자">문자 상담</div>
+                                    <div class="option" data-value="디스코드">디스코드 상담</div>
+                                </div>
+                                <input type="hidden" id="consultType" value="전화">
+                            </div>
+                        </div>
+
+                        <div class="input-group" id="discordInputGroup" style="display: none;">
+    <p class="section-notice">실시간 빠른 상담을 원하시나요?</p>
+    <a href="https://discord.gg/YOUR_INVITE_LINK" target="_blank" class="btn-discord-direct">
+        <svg class="discord-logo-svg" viewBox="0 0 127.14 96.36">
+            <path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.71,32.65-1.82,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19-16.14h0C130.46,50.45,125.12,26.74,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5.08-12.74,11.41-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.08-12.74,11.41-12.74S96.2,46,96.09,53,91.03,65.69,84.69,65.69Z"/>
+        </svg>
+        <span>디스코드 서버 입장</span>
+    </a>
+</div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>희망 커리큘럼</label>
+                        <div class="custom-select" id="selectField">
+                            <div class="select-trigger">
+                                <span>취미반</span>
+                                <i class="arrow"></i>
+                            </div>
+                            <div class="custom-options">
+                                <div class="option selected" data-value="취미반">취미반</div>
+                                <div class="option" data-value="랭크반">랭크반</div>
+                                <div class="option" data-value="프로반">프로반</div>
+                            </div>
+                            <input type="hidden" id="consultField" value="취미반">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>상담 시 궁금한 점</label>
+                        <textarea id="userQuestion" rows="5" placeholder="궁금하신 내용을 입력해주세요."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">상담 신청서 전송하기</button>
+                    <p class="privacy-text">개인정보는 상담 목적으로만 사용되며 안전하게 보호됩니다.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

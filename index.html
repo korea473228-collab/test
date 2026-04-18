@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>T-REX 아카데미 | 발로란트 프로 코칭</title>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <body class="main-page"></body>
+    <div id="imagePopup" class="simple-popup">
+    <div class="popup-container">
+        <img src="ad.jpg" alt="광고" onclick="closePopupOnly()" class="ad-img">
+        
+        <div class="popup-btns">
+            <button onclick="closePopup24h()" class="btn-24h">24시간 보지 않기</button>
+            <button onclick="closePopupOnly()" class="btn-close">닫기</button>
+        </div>
+    </div>
+</div>
+
+    <nav id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">T-REX<span>ACADEMY</span></a>
+        <div class="nav-right">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="about.html">아카데미 소개</a></li>
+                <li><a href="curriculum.html">커리큘럼</a></li>
+                <li><a href="coaches.html">코치진</a></li>
+                <li class="mo-only"><a href="contact.html" class="btn-mo-nav">1:1 상담 신청</a></li>
+            </ul>
+            <a href="contact.html" class="btn-nav pc-only">1:1 상담 신청</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <span class="badge">LIMITLESS TACTICAL EVOLUTION</span>
+                <h1>발로란트의 <span>포식자</span><br>승리를 향한 진화</h1>
+                <p>단순한 승리를 넘어 게임을 지배하는 법을 가르칩니다.<br>국내 최고 수준의 데이터 기반 피드백 시스템을 경험하세요.</p>
+                <div class="hero-btns">
+                    <button class="btn-main" onclick="location.href='contact.html'">상담 시작하기</button>
+                    <button class="btn-outline" onclick="location.href='curriculum.html'">교육 과정 보기</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
